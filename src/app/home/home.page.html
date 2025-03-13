@@ -1,20 +1,84 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>AmbianZen</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card *ngIf="activeSound">
+    <ion-img [src]="currentSound?.img" alt="{{ currentSound?.titre }}"></ion-img>
+    <ion-card-header>
+      <ion-card-title>
+        {{ currentSound?.titre }} <span *ngIf="currentSoundDuration">({{ formatDuration(currentTime) }} / {{ formatDuration(currentSoundDuration) }})</span>
+      </ion-card-title>
+      <ion-card-subtitle>{{ currentSound?.auteur }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ currentSound?.descriptif }}</p>
+      <ion-progress-bar [value]="progress"></ion-progress-bar>
+      <div class="button-group">
+        <ion-button size="large" fill="clear" (click)="togglePlayPause()">
+          <ion-icon [name]="isPlaying ? 'pause' : 'play'"></ion-icon>
+        </ion-button>
+        <ion-button size="large" fill="clear" (click)="stopSound()">
+          <ion-icon name="stop"></ion-icon>
+        </ion-button>
+        <ion-button size="large" fill="clear" (click)="playNextSound()">
+          <ion-icon name="play-forward"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let sound of sounds" [class.playing]="currentSound?.id === sound.id && isPlaying">
+      <ion-thumbnail slot="start">
+        <img [src]="sound.img" alt="{{ sound.titre }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ sound.titre }}</h2>
+        <p>{{ sound.auteur }}</p>
+      </ion-label>
+      <ion-button fill="clear" (click)="playSound(sound)">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="pauseSound()">
+        <ion-icon name="pause"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="stopSound()">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="openDetails(sound)">
+        <ion-icon name="information-circle"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+  
+  <ion-item>
+    <ion-label position="floating">Nom de la playlist</ion-label>
+    <ion-input [(ngModel)]="newPlaylistName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-input [(ngModel)]="newPlaylistDescription"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="createPlaylist(newPlaylistName, newPlaylistDescription)">
+    Créer Playlist
+  </ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let playlist of playlists">
+      <ion-label>
+        <h2>{{ playlist.name }}</h2>
+        <p>{{ playlist.description }}</p>
+        <p>Durée totale: {{ playlist.totalDuration }} sec</p>
+      </ion-label>
+      <ion-button fill="clear" (click)="playPlaylist(playlist)">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="deletePlaylist(playlist)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>

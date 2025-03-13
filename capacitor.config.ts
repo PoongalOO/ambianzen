@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'ambianzenv2',
+  appId: 'com.poongaloo.ambianzen',
+  appName: 'AmbianZen',
   webDir: 'www'
 };
 

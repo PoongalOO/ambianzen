@@ -1,0 +1,25 @@
+<ion-header>
+      <ion-toolbar>
+        <ion-title>{{ sound.titre }}</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="close()">
+            <ion-icon name="close"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content>
+      <ion-card>
+        <img [src]="sound.img" alt="{{ sound.titre }}">
+        <ion-card-header>
+          <ion-card-title>{{ sound.titre }}</ion-card-title>
+          <ion-card-subtitle>{{ sound.auteur }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{ sound.descriptif }}</p>
+          <p><strong>Source :</strong> {{ sound.source }}</p>
+          <p><strong>Mots clés :</strong> {{ sound.motsCles.join(', ') }}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>

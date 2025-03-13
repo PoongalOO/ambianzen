@@ -1,0 +1,202 @@
+[
+    {
+      "id": 1,
+      "code": "foret1",
+      "titre": "Forêt",
+      "descriptif": "",
+      "keys": "",
+      "src": "AMBForst_Foret.mp3",
+      "img": "assets/img/foret1.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 2,
+      "code": "foret2",
+      "titre": "Lisière de forêt",
+      "descriptif": "Ambiance de forêt enregistrée en lisière de bois. Oiseaux, vent, bruits de branches, etc",
+      "keys": "",
+      "src": "AMBForst_Foret-lisiere.mp3",
+      "img": "assets/img/foret-lisiere.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 3,
+      "code": "froux",
+      "titre": "Tourbières des Froux",
+      "descriptif": "Dans les Tourbières des Froux, près de Manou dans le Perche, France. Beaucoup de vent. Mi avril.",
+      "keys": "",
+      "src": "AMBForst_Tourbieres-des-froux.mp3",
+      "img": "assets/img/tourbiere.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 4,
+      "code": "foret3",
+      "titre": "Forêt dunaire de Gironde",
+      "descriptif": "Insectes dans les forêts dunaires de Gironde. Littoral Atlantique.",
+      "keys": "",
+      "src": "AMBForst_Forets-dunaires-gironde.mp3",
+      "img": "assets/img/foret1.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 5,
+      "code": "foret4",
+      "titre": "Forêt de Rambouillet",
+      "descriptif": "Ambiance de la forêt de Rambouillet à 7 heures. Chants oiseau, route au loin, passage avion, branches qui craquent, vent dans les feuilles",
+      "keys": "",
+      "src": "AMBForst_Foret-rambouillet.mp3",
+      "img": "assets/img/foret1.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 6,
+      "code": "vagues1",
+      "titre": "Vagues et Sternes",
+      "descriptif": "",
+      "keys": "",
+      "src": "AMBSea_vagues-sternes.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 7,
+      "code": "pluie1",
+      "titre": "Pluie et orage 2",
+      "descriptif": "Pluie et orage 2",
+      "keys": "",
+      "src": "STORM_Pluie-orage2.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 8,
+      "code": "bruitblanc",
+      "titre": "Bruit blanc",
+      "descriptif": "Utilisé pour le traitement des acouphènes ou pour favoriser l\"endormissement par exemple, un bruit blanc est une réalisation d\"un processus aléatoire dans lequel la densité spectrale de puissance est la même pour toutes les fréquences de la bande passante",
+      "keys": "",
+      "src": "Bruit-blanc.wav",
+      "img": "assets/img/bruit-blanc.jpg",
+      "type": "audio/wav"
+    },
+    {
+      "id": 9,
+      "code": "bruitrose",
+      "titre": "Bruit rose",
+      "descriptif": "Le bruit rose est un signal aléatoire dont l\"intensité de chaque bande de fréquence de taille identique est égale, si on l\"analyse dans une échelle logarithmique ",
+      "keys": "",
+      "src": "Bruit-rose.wav",
+      "img": "assets/img/bruit-blanc.jpg",
+      "type": "audio/wav"
+    },
+    {
+      "id": 10,
+      "code": "pluie2",
+      "titre": "Pluie et orage 1",
+      "descriptif": "Pluie et orage 1",
+      "src": "STORM_Pluie-orage.mp3",
+      "keys": "",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 11,
+      "code": "pluie3",
+      "titre": "Pluie et orage3",
+      "descriptif": "Pluie et orage sur pare-brise de voiture",
+      "src": "RAINGlas_Orage-pluie-pare-brise-voiture.mp3",
+      "keys": "",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 12,
+      "code": "vent1",
+      "titre": "Bruit du vent",
+      "descriptif": "Bruit du vent dans les herbes hautes dans un champ",
+      "keys": "",
+      "src": "WINDVege_Vent-herbes-hautes.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 13,
+      "code": "vagues2",
+      "titre": "Mer et vagues moyennes",
+      "descriptif": "Mer, vagues moyennes, remous, vrombissement sourd de la mer au loin",
+      "keys": "",
+      "src": "AMBSea_Mer-vagues.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 14,
+      "code": "feu1",
+      "titre": "Feu de cheminée",
+      "descriptif": "Feu de cheminée, âtre fermé",
+      "keys": "",
+      "src": "FIREBurn_Feu-cheminee.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 15,
+      "code": "vent2",
+      "titre": "Vent fort dans un arbre et sur une plaque de taule",
+      "descriptif": "Vent fort dans un arbre et sur une plaque de taule. Bruit des aiguilles de pin, leger cris oiseau, vent très variable",
+      "keys": "",
+      "src": "WIND_Vent-fort.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 16,
+      "code": "autoroute1",
+      "titre": "Passage de voitures et camions sur autoroute",
+      "descriptif": "Passage de voitures et camions sur autoroute. Enregistrement à 50 mètres à coté de la voie",
+      "keys": "",
+      "src": "AMBTraf_Autoroute.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 17,
+      "code": "oiseaux1",
+      "titre": "Réveil des oiseaux",
+      "descriptif": "Ambiance sonore de campagne à l\"aurore, le moment où les oiseaux commencent à chanter le printemps : nous sommes le 18 mai 2020 à 5h30 en France, en plein confinement lié au COVid-19",
+      "keys": "",
+      "src": "AMBBird_Reveil-oiseaux4.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 18,
+      "code": "foret5",
+      "titre": "Forêt de Senonches",
+      "descriptif": "Ambiance sonore dans la forêt de Senonches, en Eure et Loir (28), en France. Oiseaux, vent, rumeurs",
+      "keys": "",
+      "src": "AMBForst_Foret-senonches.m4a",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 19,
+      "code": "maintenon",
+      "titre": "Centre ville de Maintenon",
+      "descriptif": "Ambiance sonore sur le parking du centre ville de Maintenon, en Eure et Loir (28), en France. Voitures, vent, un café ouvert",
+      "keys": "",
+      "src": "AMBSubn_Centre-ville-maintenon.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    },
+    {
+      "id": 20,
+      "code": "ecole1",
+      "titre": "Récréation école, football",
+      "descriptif": "Cours de récréation école, match de football.",
+      "keys": "",
+      "src": "CRWDChld_Cours-recreation-football.mp3",
+      "img": "assets/img/birds-1920.jpg",
+      "type": "audio/mp3"
+    }
+  ]
